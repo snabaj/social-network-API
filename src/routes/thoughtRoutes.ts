@@ -10,8 +10,8 @@ import {
 } from "../controllers/thoughtController.js";
 
 const router = Router();
-router.route("/api/thoughts").get(getThoughts).post(createThought);
-router.route("/api/thoughts/:id").get(getThoughtById).put(updateThought).delete(deleteThought);
-router.route("/api/thoughts/:thoughtId/reactions").post(addReaction).delete(removeReaction);
+router.route("/").get(getThoughts).post(createThought);
+router.route("/:id").get(getThoughtById).put(updateThought).delete(deleteThought);
+router.route("/:id/reactions").post(addReaction).delete(removeReaction);
 
 export default router;
