@@ -7,7 +7,7 @@
     "scripts": {
       "build": "npx tsc",
       "start": "npm run build && node dist/server.js",
-      "seed": "npm run build && node  dist/utils/seed.js",
+      "seed": "npm run build && node  dist/seeds/seedsData.js",
       "test": "echo \"Error: no test specified\" && exit 1"
     },
     "keywords": [],
