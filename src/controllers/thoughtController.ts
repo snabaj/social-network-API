@@ -1,5 +1,6 @@
 import { Request, Response } from 'express';
 import Thought from '../models/thought.js';
+import { Types } from 'mongoose';
 
 export const getThoughts = async (_req: Request, res: Response) => {
   try {
@@ -47,27 +48,39 @@ export const deleteThought = async (req: Request, res: Response) => {
 };
 
 export const addReaction = async (req: Request, res: Response) => {
-  try {
-    const thought = await Thought.findByIdAndUpdate(
-      req.params.id,
-      { $push: { reactions: req.body } },
-      { new: true }
-    );
-    res.json(thought);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-};
+    try {
+      const updatedThought = await Thought.findByIdAndUpdate(
+        req.params.id,
+        {
+          $push: { reactions: { reactionId: new Types.ObjectId(), ...req.body } },
+        },
+        { new: true }
+      );
+  
+      if (!updatedThought) {
+        res.status(404).json({ message: "No thought found with that ID" });
+      }
+  
+      res.json(updatedThought);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  };
 
-export const removeReaction = async (req: Request, res: Response) => {
-  try {
-    const thought = await Thought.findByIdAndUpdate(
-      req.params.id,
-      { $pull: { reactions: { _id: req.body.reactionId } } },
-      { new: true }
-    );
-    res.json(thought);
-  } catch (err) {
-    res.status(500).json(err);
-  }
-};
+  export const removeReaction = async (req: Request, res: Response) => {
+    try {
+      const updatedThought = await Thought.findByIdAndUpdate(
+        req.params.id,
+        { $pull: { reactions: { reactionId: req.body.reactionId } } },
+        { new: true }
+      );
+  
+      if (!updatedThought) {
+        res.status(404).json({ message: "No thought found with that ID" });
+      }
+  
+      res.json(updatedThought);
+    } catch (err) {
+      res.status(500).json(err);
+    }
+  };
