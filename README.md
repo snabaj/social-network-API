@@ -32,45 +32,50 @@ This project is a backend API for a social networking application where users ca
 
 ### Users
 
-- GET /api/users - Retrieve all users
+- `GET /api/users` - Retrieve all users
 
-- GET /api/users/:userId - Retrieve a single user by ID
+- `GET /api/users/:userId` - Retrieve a single user by ID
 
-- POST /api/users - Create a new user
+- `POST /api/users` - Create a new user
 
-- PUT /api/users/:userId - Update a user
+- `PUT /api/users/:userId` - Update a user
 
-- DELETE /api/users/:userId - Remove a user
+- `DELETE /api/users/:userId` - Remove a user
 
-- POST /api/users/:userId/friends/:friendId - Add a friend
+- `POST /api/users/:userId/friends/:friendId` - Add a friend
 
-- DELETE /api/users/:userId/friends/:friendId - Remove a friend
+- `DELETE /api/users/:userId/friends/:friendId` - Remove a friend
 
 ### Thoughts
 
-- GET /api/thoughts - Retrieve all thoughts
+- `GET /api/thoughts` - Retrieve all thoughts
 
-- GET /api/thoughts/:thoughtId - Retrieve a single thought
+- `GET /api/thoughts/:thoughtId` - Retrieve a single thought
 
-- POST /api/thoughts - Create a new thought
+- `POST /api/thoughts` - Create a new thought
 
-- PUT /api/thoughts/:thoughtId - Update a thought
+- `PUT /api/thoughts/:thoughtId` - Update a thought
 
-- DELETE /api/thoughts/:thoughtId - Remove a thought
+- `DELETE /api/thoughts/:thoughtId` - Remove a thought
 
-- POST /api/thoughts/:thoughtId/reactions - Add a reaction
+- `POST /api/thoughts/:thoughtId/reactions` - Add a reaction
 
-- DELETE /api/thoughts/:thoughtId/reactions/:reactionId - Remove a reaction
+- `DELETE /api/thoughts/:thoughtId/reactions/:reactionId` - Remove a reaction
 
 ## Usage
 
 Use Insomnia or Postman to test API endpoints.
 
 Example request to create a user:
+```
 {
   "username": "john_doe",
   "email": "john.doe@example.com"
 }
+```
+## GET route for all users
+
+## GET route for all thoughts
 
 ## License
 
