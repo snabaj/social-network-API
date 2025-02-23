@@ -1,17 +1,33 @@
 # Social Network API
 
+[![Node.js](https://img.shields.io/badge/Node.js-43853d?style=flat&logo=node.js&logoColor=white)](https://nodejs.org/)
+[![Express.js](https://img.shields.io/badge/Express.js-404D59?style=flat&logo=express&logoColor=white)](https://expressjs.com/)
+[![MongoDB](https://img.shields.io/badge/MongoDB-4ea94b?style=flat&logo=mongodb&logoColor=white)](https://www.mongodb.com/)
+[![Mongoose](https://img.shields.io/badge/Mongoose-4a8fdb?style=flat&logo=mongoose&logoColor=white)](https://mongoosejs.com/)
+[![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
+[![VS Code](https://img.shields.io/badge/VS%20Code-007ACC?style=flat&logo=visual-studio-code&logoColor=white)](https://code.visualstudio.com/)
+
+## Table of Contents
+
+- [Social Network API](#social-network-api)
+  - [Table of Contents](#table-of-contents)
+  - [Description](#description)
+  - [Installation](#installation)
+  - [API Endpoints](#api-endpoints)
+    - [Users](#users)
+    - [Thoughts](#thoughts)
+  - [Usage](#usage)
+    - [Demo video.](#demo-video)
+    - [Screenshot](#screenshot)
+    - [Screenshot](#screenshot-1)
+  - [License](#license)
+  - [Contributing](#contributing)
+  - [Tests](#tests)
+  - [Questions](#questions)
+
 ## Description
 
 This project is a backend API for a social networking application where users can share their thoughts, react to friends' thoughts, and maintain a friend list. The API is built using Express.js, MongoDB, and Mongoose.
-
-## Built With
-
-- **[Node.js](https://nodejs.org/)**
-- **[Express.js](https://expressjs.com/)**
-- **[MongoDB](https://www.mongodb.com/)**
-- **[Mongoose](https://mongoosejs.com/)**
-- **[TypeScript](https://www.typescriptlang.org/)**
-- **[VS Code](https://code.visualstudio.com/)**
 
 ## Installation
 
@@ -87,15 +103,19 @@ Example request to create a user:
   "email": "john.doe@example.com"
 }
 ```
-### Walkthrough Video demonstrating the application's functionality.
+### Demo video.
 
 https://drive.google.com/file/d/1fSbMlApanz75PKGDuCi1Zfrl9omLJfzK/view
 
-### GET route for all users
+### Screenshot
+
+GET route for all users
 
 ![Get route for all users](<src/Assets/Screenshot 2025-02-22 at 10.45.12 PM.png>)
 
-### GET route for all thoughts
+### Screenshot
+
+GET route for all thoughts
 
 ![Get route for all thoughts](<src/Assets/Screenshot 2025-02-22 at 10.46.28 PM.png>)
 
@@ -105,7 +125,12 @@ This project is licensed under the [MIT](https://opensource.org/licenses/MIT) li
 
 ## Contributing
 
-If you wish to contribute to this project, feel free to fork the repository, create a branch, and submit a pull request with your changes. Ensure your code is well-documented, and your changes are tested before submitting.
+Contributions are welcome! If you wish to contribute, fork repository, create new branch, commit changes, and push your branch. Please follow these steps:
+```
+git checkout -b feature/your-feature
+git commit -m "Add some feature"
+git push origin feature/your-feature
+```
 
 ## Tests
 
