@@ -16,17 +16,31 @@ This project is a backend API for a social networking application where users ca
 ## Installation
 
 1. Clone the repository:
+```
+git clone https://github.com/your_username/repository-name.git
+cd repository-name
+```
 
 2. Install dependencies:
-    `npm install`
+```
+npm install
+```
 
 3. Create .env file:
+ ```
+PORT=
+MONGO_URI=
+```
 
 4. Run the seed script to populate the database with sample data:
-    `npm run seed`
+```
+npm run seed
+```
 
 5. Start the server:
-    `npm run start`
+```
+npm run start
+```
 
 ## API Endpoints
 
