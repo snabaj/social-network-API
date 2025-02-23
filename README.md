@@ -17,8 +17,8 @@ This project is a backend API for a social networking application where users ca
 
 1. Clone the repository:
 ```
-git clone https://github.com/your_username/repository-name.git
-cd repository-name
+git clone https://github.com/snabaj/social-network-API.git
+cd social-network-API
 ```
 
 2. Install dependencies:
