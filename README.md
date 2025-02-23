@@ -73,6 +73,10 @@ Example request to create a user:
   "email": "john.doe@example.com"
 }
 ```
+### Walkthrough Video demonstrating the application's functionality.
+
+https://drive.google.com/file/d/1fSbMlApanz75PKGDuCi1Zfrl9omLJfzK/view
+
 ### GET route for all users
 
 ![Get route for all users](<src/Assets/Screenshot 2025-02-22 at 10.45.12 PM.png>)
