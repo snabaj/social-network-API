@@ -73,11 +73,11 @@ Example request to create a user:
   "email": "john.doe@example.com"
 }
 ```
-## GET route for all users
+### GET route for all users
 
 ![Get route for all users](<src/Assets/Screenshot 2025-02-22 at 10.45.12 PM.png>)
 
-## GET route for all thoughts
+### GET route for all thoughts
 
 ![Get route for all thoughts](<src/Assets/Screenshot 2025-02-22 at 10.46.28 PM.png>)
 
